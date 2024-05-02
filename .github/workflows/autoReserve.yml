@@ -6,7 +6,7 @@ name: imaotai-action
 on:
   push:
   schedule:
-    - cron: '*/1 14 * * *'
+    - cron: '0 15 * * *'
   
 
 
