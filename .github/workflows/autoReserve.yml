@@ -6,7 +6,6 @@ name: imaotai-action
 on:
   schedule:
     - cron: '*/5 15 * * *'
-  workflow_dispatch:
 
 
 env:
@@ -17,7 +16,7 @@ permissions:
 
 jobs:
   build:
-
+    name: Build and run task
     runs-on: ubuntu-latest
     #    runs-on: windows-latest
 
