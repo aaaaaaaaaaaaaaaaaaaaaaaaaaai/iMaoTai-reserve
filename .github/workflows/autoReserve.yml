@@ -6,7 +6,7 @@ name: imaotai-action
 on:
   schedule:
     - cron: '*/5 15 * * *'
-  
+  workflow_dispatch:
 
 
 env:
