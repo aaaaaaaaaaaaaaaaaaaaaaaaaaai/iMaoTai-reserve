@@ -4,6 +4,8 @@ on:
   push:
   schedule:
     - cron: '*/5 * * * *'  # 每天午夜执行
+env:
+  TZ: Asia/Shanghai
 
 jobs:
   scheduled-job:
