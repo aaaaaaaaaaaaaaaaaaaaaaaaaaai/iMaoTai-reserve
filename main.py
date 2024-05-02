@@ -1,7 +1,7 @@
 import datetime
 import logging
 import sys
-
+import os
 import config
 import login
 import process
@@ -29,6 +29,13 @@ configs = login.config
 if len(configs.sections()) == 0:
     logging.error("配置文件未找到配置")
     sys.exit(1)
+else:
+    PUSH_TOKEN = os.environ.get("PUSHPLUS_KEY")
+    AMAP_KEY = os.environ.get("GAODE_KEY")
+    PRIVATE_AES_KEY = os.environ.get("PRIVATE_AES_KEY")
+    logging.info("token:%s", PUSH_TOKEN)
+    logging.info("key:%s", AMAP_KEY)
+    logging.info("private_aes_key:%s", PRIVATE_AES_KEY)
 
 aes_key = privateCrypt.get_aes_key()
 
