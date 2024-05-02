@@ -2,10 +2,6 @@ name: Scheduled Job
 #测试
 on:
   push:
-    branches: 
-      - "master"
-    paths:
-      - '.github/workflows/**'
   schedule:
     - cron: '10 9 * * *'
 
