@@ -2,7 +2,7 @@ name: Scheduled Job
 
 on:
   schedule:
-    - cron: '*/6 * * * *'  # 每天午夜执行
+    - cron: '*/6 * * * *'
 env:
   TZ: Asia/Shanghai
 
