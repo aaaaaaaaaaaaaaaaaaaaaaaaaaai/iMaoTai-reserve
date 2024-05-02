@@ -1,7 +1,6 @@
 name: Scheduled Job
 
 on:
-  push:
   schedule:
     - cron: '*/6 * * * *'  # 每天午夜执行
 env:
