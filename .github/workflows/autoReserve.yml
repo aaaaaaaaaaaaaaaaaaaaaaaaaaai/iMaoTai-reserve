@@ -2,6 +2,9 @@ name: Scheduled Job
 
 on:
   push:
+    branches: [ "master" ]
+    paths:
+      - '.github/workflows/**'
   schedule:
     - cron: '10 9 * * *'
 env:
