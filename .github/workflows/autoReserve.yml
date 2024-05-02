@@ -3,7 +3,7 @@ name: Scheduled Job
 on:
   push:
   schedule:
-    - cron: '*/5 * * * *'  # 每天午夜执行
+    - cron: '*/6 * * * *'  # 每天午夜执行
 env:
   TZ: Asia/Shanghai
 
