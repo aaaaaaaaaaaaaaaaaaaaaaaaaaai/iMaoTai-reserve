@@ -5,7 +5,7 @@ on:
     - cron: '10 1 * * *'
 
 env:  
-  TZ: UTC
+  TZ: Europe/London
 
 permissions:
   contents: read
