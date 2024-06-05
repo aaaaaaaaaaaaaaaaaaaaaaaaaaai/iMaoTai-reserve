@@ -2,7 +2,7 @@ name: Scheduled Job
 on:
   push:
   schedule:
-    - cron: '10 4 * * *'
+    - cron: '10 1 * * *'
 
 env:  
   TZ: Asia/Shanghai
